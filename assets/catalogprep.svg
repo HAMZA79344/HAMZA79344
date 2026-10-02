@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">CatalogPrep Tools: WooCommerce CSV cleaner</title>
+  <desc id="desc">Illustration of the WooCommerce CSV cleaner checking simple, variable and variation products in the browser, marking rows that are ready to import and rows that need fixing.</desc>
+  <style>
+    .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', sans-serif; }
+    .mono { font-family: 'SFMono-Regular', 'JetBrains Mono', Consolas, 'Liberation Mono', Menlo, monospace; }
+    @keyframes drift-a { to { transform: translate(60px, 40px); } }
+    @keyframes drift-b { to { transform: translate(-70px, -30px); } }
+    @keyframes rise { 0% { opacity: 0; transform: translateX(-10px); } 4% { opacity: 1; transform: translateX(0); } 88% { opacity: 1; transform: translateX(0); } 95%, 100% { opacity: 0; transform: translateX(0); } }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    @keyframes twinkle { 0%, 100% { opacity: 0.15; } 50% { opacity: 0.95; } }
+    @media (prefers-reduced-motion: no-preference) {
+      .orb-a { animation: drift-a 16s ease-in-out infinite alternate; }
+      .orb-b { animation: drift-b 20s ease-in-out infinite alternate; }
+      .row { animation: rise 12s ease-out infinite both; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1120"/>
+      <stop offset="0.55" stop-color="#0F1A2E"/>
+      <stop offset="1" stop-color="#150F2E"/>
+    </linearGradient>
+    <radialGradient id="gTeal"><stop offset="0" stop-color="#14B8A6" stop-opacity="0.42"/><stop offset="1" stop-color="#14B8A6" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gViolet"><stop offset="0" stop-color="#8B5CF6" stop-opacity="0.38"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#2DD4BF"/><stop offset="0.5" stop-color="#60A5FA"/><stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#94A3B8" stroke-opacity="0.08"/>
+    </pattern>
+    <radialGradient id="gridFade" cx="0.7" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="fade"><rect width="1200" height="390" fill="url(#gridFade)"/></mask>
+    <clipPath id="card"><rect width="1200" height="390" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="1200" height="390" fill="url(#bg)"/>
+    <rect width="1200" height="390" fill="url(#grid)" mask="url(#fade)"/>
+    <circle class="orb-a" cx="156" cy="58" r="281" fill="url(#gTeal)"/>
+    <circle class="orb-b" cx="1080" cy="370" r="312" fill="url(#gViolet)"/>
+    <circle cx="30" cy="30" r="6" fill="#FF5F57"/><circle cx="50" cy="30" r="6" fill="#FEBC2E"/><circle cx="70" cy="30" r="6" fill="#28C840"/>
+    <text class="sans" x="600" y="35" font-size="13.5" fill="#94A3B8" text-anchor="middle">CatalogPrep Tools · <tspan fill="#F8FAFC" font-weight="600">WooCommerce CSV Cleaner</tspan></text>
+    <g fill="none" stroke="#5EEAD4" stroke-width="1.6" stroke-linecap="round">
+      <rect x="1021" y="27" width="12" height="10" rx="2"/><path d="M1023.5 27v-3a3.5 3.5 0 0 1 7 0v3"/>
+    </g>
+    <text class="sans" x="1170" y="36" font-size="12.5" font-weight="600" fill="#5EEAD4" text-anchor="end" textLength="128" lengthAdjust="spacingAndGlyphs">Runs in your browser</text>
+    <line x1="0" y1="56" x2="1200" y2="56" stroke="#94A3B8" stroke-opacity="0.14"/>
+
+    <g fill="none" stroke="#94A3B8" stroke-width="1.6" stroke-linejoin="round" transform="translate(36 81)">
+      <path d="M2 0h9l6 6v16H2Z"/><path d="M11 0v6h6"/>
+    </g>
+    <text class="mono" x="64" y="97" font-size="15" fill="#E2E8F0">sample-products.csv</text>
+    <rect x="300" y="88" width="600" height="8" rx="4" fill="#1E293B"/>
+    <rect x="300" y="88" width="600" height="8" rx="4" fill="url(#accent)">
+      <animate attributeName="width" values="0;600;600" keyTimes="0;0.06;1" dur="12s" repeatCount="indefinite"/>
+    </rect>
+    <text class="sans" x="1164" y="97" font-size="14" fill="#94A3B8" text-anchor="end"><tspan fill="#34D399" font-weight="700">3 ready</tspan>  ·  <tspan fill="#FBBF24" font-weight="700">2 to fix</tspan></text>
+
+    <text class="sans" x="40" y="146" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="#64748B">TYPE</text><text class="sans" x="200" y="146" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="#64748B">SKU</text><text class="sans" x="440" y="146" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="#64748B">PRODUCT</text><text class="sans" x="780" y="146" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="#64748B">STATUS</text>
+    <line x1="20" y1="160" x2="1180" y2="160" stroke="#94A3B8" stroke-opacity="0.14"/>
+    
+    <g class="row" style="animation-delay:0.80s">
+      <rect x="40" y="176" width="63.2" height="24" rx="12" fill="#60A5FA" fill-opacity="0.12" stroke="#60A5FA" stroke-opacity="0.45"/>
+      <text class="mono" x="50" y="192" font-size="12" fill="#60A5FA" textLength="43.2" lengthAdjust="spacingAndGlyphs">simple</text>
+      <text class="mono" x="200" y="193" font-size="14" fill="#CBD5E1">MUG-001</text>
+      <text class="sans" x="440" y="193" font-size="15" fill="#E2E8F0">Ceramic Mug</text>
+      <circle cx="790" cy="188" r="9" fill="#34D399" fill-opacity="0.15" stroke="#34D399" stroke-width="1.5"/><path d="M786 188l2.8 2.8 5-5.4" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="sans" x="808" y="193" font-size="14" fill="#A7F3D0">Ready to import</text>
+    </g>
+    <g class="row" style="animation-delay:1.05s"><rect x="20" y="208" width="1160" height="40" rx="8" fill="#FFFFFF" fill-opacity="0.025"/>
+      <rect x="40" y="216" width="77.6" height="24" rx="12" fill="#A78BFA" fill-opacity="0.12" stroke="#A78BFA" stroke-opacity="0.45"/>
+      <text class="mono" x="50" y="232" font-size="12" fill="#A78BFA" textLength="57.6" lengthAdjust="spacingAndGlyphs">variable</text>
+      <text class="mono" x="200" y="233" font-size="14" fill="#CBD5E1">TEE-100</text>
+      <text class="sans" x="440" y="233" font-size="15" fill="#E2E8F0">Classic Tee</text>
+      <circle cx="790" cy="228" r="9" fill="#34D399" fill-opacity="0.15" stroke="#34D399" stroke-width="1.5"/><path d="M786 228l2.8 2.8 5-5.4" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="sans" x="808" y="233" font-size="14" fill="#A7F3D0">Ready to import</text>
+    </g>
+    <g class="row" style="animation-delay:1.30s">
+      <rect x="40" y="256" width="84.8" height="24" rx="12" fill="#F0ABFC" fill-opacity="0.12" stroke="#F0ABFC" stroke-opacity="0.45"/>
+      <text class="mono" x="50" y="272" font-size="12" fill="#F0ABFC" textLength="64.8" lengthAdjust="spacingAndGlyphs">variation</text>
+      <text class="mono" x="200" y="273" font-size="14" fill="#CBD5E1">TEE-100-RED-M</text>
+      <text class="sans" x="440" y="273" font-size="15" fill="#E2E8F0">Classic Tee – Red / M</text>
+      <circle cx="790" cy="268" r="9" fill="#34D399" fill-opacity="0.15" stroke="#34D399" stroke-width="1.5"/><path d="M786 268l2.8 2.8 5-5.4" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="sans" x="808" y="273" font-size="14" fill="#A7F3D0">Ready to import</text>
+    </g>
+    <g class="row" style="animation-delay:1.55s"><rect x="20" y="288" width="1160" height="40" rx="8" fill="#FFFFFF" fill-opacity="0.025"/>
+      <rect x="40" y="296" width="84.8" height="24" rx="12" fill="#F0ABFC" fill-opacity="0.12" stroke="#F0ABFC" stroke-opacity="0.45"/>
+      <text class="mono" x="50" y="312" font-size="12" fill="#F0ABFC" textLength="64.8" lengthAdjust="spacingAndGlyphs">variation</text>
+      <text class="mono" x="200" y="313" font-size="14" fill="#CBD5E1">TEE-200-BLU-L</text>
+      <text class="sans" x="440" y="313" font-size="15" fill="#E2E8F0">Logo Tee – Blue / L</text>
+      <path d="M790 299l9.5 17h-19Z" fill="#FBBF24" fill-opacity="0.15" stroke="#FBBF24" stroke-width="1.5" stroke-linejoin="round"/><path d="M790 305v5" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/><circle cx="790" cy="313" r="1.2" fill="#FBBF24"/>
+      <text class="sans" x="808" y="313" font-size="14" fill="#FCD34D">Parent SKU TEE-200 not found</text>
+    </g>
+    <g class="row" style="animation-delay:1.80s">
+      <rect x="40" y="336" width="63.2" height="24" rx="12" fill="#60A5FA" fill-opacity="0.12" stroke="#60A5FA" stroke-opacity="0.45"/>
+      <text class="mono" x="50" y="352" font-size="12" fill="#60A5FA" textLength="43.2" lengthAdjust="spacingAndGlyphs">simple</text>
+      <text class="mono" x="200" y="353" font-size="14" fill="#CBD5E1">CAP-010</text>
+      <text class="sans" x="440" y="353" font-size="15" fill="#E2E8F0">Snapback Cap</text>
+      <path d="M790 339l9.5 17h-19Z" fill="#FBBF24" fill-opacity="0.15" stroke="#FBBF24" stroke-width="1.5" stroke-linejoin="round"/><path d="M790 345v5" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/><circle cx="790" cy="353" r="1.2" fill="#FBBF24"/>
+      <text class="sans" x="808" y="353" font-size="14" fill="#FCD34D">Regular price is empty</text>
+    </g>
+    <rect x="0" y="386" width="1200" height="4" fill="url(#accent)"/>
+  </g>
+</svg>
