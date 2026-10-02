@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="180" viewBox="0 0 1200 180" role="img" aria-label="Thanks for stopping by!">
+  <style>
+    .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', sans-serif; }
+    @keyframes left { from { transform: translateX(0); } to { transform: translateX(-1200px); } }
+    @keyframes right { from { transform: translateX(-1200px); } to { transform: translateX(0); } }
+    @media (prefers-reduced-motion: no-preference) {
+      .w1 { animation: left 22s linear infinite; }
+      .w2 { animation: right 15s linear infinite; }
+      .w3 { animation: left 11s linear infinite; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="waveGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0" spreadMethod="repeat">
+      <stop offset="0" stop-color="#0F766E"/><stop offset="0.5" stop-color="#6D28D9"/><stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+  </defs>
+  <path class="w1" d="M0 64Q300 30 600 64T1200 64T1800 64T2400 64V180H0Z" fill="#A78BFA" fill-opacity="0.28"/>
+  <path class="w2" d="M0 86Q300 58 600 86T1200 86T1800 86T2400 86V180H0Z" fill="#2DD4BF" fill-opacity="0.3"/>
+  <path class="w3" d="M0 112Q300 90 600 112T1200 112T1800 112T2400 112V180H0Z" fill="url(#waveGrad)"/>
+  <text class="sans" x="600" y="156" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">Thanks for stopping by ✦</text>
+</svg>
