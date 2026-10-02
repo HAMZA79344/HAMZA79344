@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/header.svg" width="100%" alt="Hi, I'm Hamza. WordPress and WooCommerce developer. I build websites and the systems behind them. 6+ years of experience, based in Pakistan, working with clients worldwide.">
+<img src="./assets/header.svg" width="100%" alt="Hi, I'm Ameer Hamza. WordPress and WooCommerce developer. I build websites and the systems behind them. 6+ years of experience, based in Pakistan, working with clients worldwide.">
 
 <br>
 
@@ -20,10 +20,10 @@ My focus is making the difficult parts work together: **checkout rules, pricing 
 ```php
 <?php
 /**
- * Plugin Name: Hamza
+ * Plugin Name: Ameer Hamza
  * Description: Turns business requirements into practical, maintainable software.
  * Version:     6+ years
- * Author:      Hamza · Based in Pakistan · Working with clients worldwide
+ * Author:      Ameer Hamza · Based in Pakistan · Working with clients worldwide
  * Author URI:  https://skillssparx.com
  * Requires:    A real business problem
  */

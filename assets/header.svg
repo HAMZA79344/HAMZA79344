@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
-  <title id="title">Hi, I'm Hamza</title>
+  <title id="title">Hi, I'm Ameer Hamza</title>
   <desc id="desc">WordPress and WooCommerce developer. I build websites and the systems behind them. 6+ years of experience, based in Pakistan, working with clients worldwide.</desc>
   <style>
     .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', sans-serif; }
@@ -42,9 +42,9 @@
     </radialGradient>
     <mask id="fade"><rect width="1200" height="400" fill="url(#gridFade)"/></mask>
     <clipPath id="card"><rect width="1200" height="400" rx="24"/></clipPath>
-    <linearGradient id="nameGrad" gradientUnits="userSpaceOnUse" x1="290" y1="0" x2="530" y2="0" spreadMethod="reflect">
+    <linearGradient id="nameGrad" gradientUnits="userSpaceOnUse" x1="230" y1="0" x2="598" y2="0" spreadMethod="reflect">
       <stop offset="0" stop-color="#5EEAD4"/><stop offset="0.5" stop-color="#60A5FA"/><stop offset="1" stop-color="#A78BFA"/>
-      <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="480 0" dur="6s" repeatCount="indefinite"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="736 0" dur="7s" repeatCount="indefinite"/>
     </linearGradient>
     <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#2DD4BF" stop-opacity="0.7"/><stop offset="0.5" stop-color="#94A3B8" stop-opacity="0.15"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0.7"/>
@@ -70,8 +70,8 @@
     <text class="sans" x="106" y="78" font-size="13" font-weight="600" letter-spacing="2.4" fill="#5EEAD4" textLength="436" lengthAdjust="spacingAndGlyphs">WORDPRESS · WOOCOMMERCE · CUSTOM DEVELOPMENT</text>
 
     <!-- Name + tagline -->
-    <text class="sans" x="68" y="166" font-size="66" font-weight="800" fill="#F8FAFC" textLength="462" lengthAdjust="spacingAndGlyphs">Hi, I’m <tspan fill="url(#nameGrad)">Hamza</tspan></text>
-    <text class="wave" x="548" y="160" font-size="54">👋</text>
+    <text class="sans" x="68" y="164" font-size="54" font-weight="800" fill="#F8FAFC" textLength="530" lengthAdjust="spacingAndGlyphs">Hi, I’m <tspan fill="url(#nameGrad)">Ameer Hamza</tspan></text>
+    <text class="wave" x="610" y="160" font-size="46">👋</text>
     <text class="sans" x="70" y="218" font-size="25" fill="#94A3B8" textLength="556" lengthAdjust="spacingAndGlyphs">I build websites and <tspan fill="#F8FAFC" font-weight="600">the systems behind them.</tspan></text>
 
     <!-- Typing terminal -->
